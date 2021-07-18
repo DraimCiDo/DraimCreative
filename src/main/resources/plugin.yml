@@ -4,3 +4,68 @@ main: me.draimcreative.draimcreative.DraimCreative
 api-version: 1.17
 authors: [ DraimGooSe ]
 description: Ограничения креатива для проекта DraimCiDo
+commands:
+  draimc:
+    description: Главная команда
+    usage: /draimc
+permissions:
+  draimcreative.bypass.container:
+    description: "Разрешить использование контейнера в творческом режиме"
+    default: op
+  draimcreative.bypass.ignite:
+    description: "Разрешить поджигать блок в творческом режиме"
+    default: op
+  draimcreative.bypass.spawner:
+    description: "Разрешите использовать яйцо призыва в творческом режиме"
+    default: op
+  draimcreative.bypass.drop:
+    description: "Разрешить выбрасывание предметов в творческом режиме"
+    default: op
+  draimcreative.bypass.pickup:
+    description: "Разрешить подбирать предметы в творческом режиме"
+    default: op
+  draimcreative.bypass.build:
+    description: "Разрешить строить/ставить блоки в творческом режиме"
+    default: op
+  draimcreative.bypass.entity:
+    description: "Разрешить взаимодействие с сущностью в творческом режиме"
+    default: op
+  draimcreative.bypass.inventory:
+    description: "Байпасс на обход творческого инвентаря"
+    default: op
+  draimcreative.bypass.blacklist.place:
+    description: "Байпасс на обход творческого инвентаря"
+    default: op
+  draimcreative.bypass.blacklist.use:
+    description: "Байпасс на обход творческого инвентаря"
+    default: op
+  draimcreative.bypass.blacklist.get:
+    description: "Байпасс на обход творческого инвентаря"
+    default: op
+  draimcreative.bypass.blacklist.break:
+    description: "Байпасс на обход творческого инвентаря"
+    default: op
+  draimcreative.bypass.blacklist.commands:
+    description: "Обход черного списка творческих команд"
+    default: op
+  draimcreative.bypass.lore:
+    description: "Байпасс на описание предметов в креативе"
+    default: op
+  draimcreative.reload:
+    description: "Разрешить перезагрузку DraimCreative"
+    default: op
+  draimcreative.admin:
+    description: "Разрешить использовать некоторые команды администратора"
+    default: op
+  draimcreative.bypass.pvp:
+    description: "Разрешить бить игроков"
+    default: op
+  draimcreative.bypass.pve:
+    description: "Разрешить бить мобов"
+    default: op
+  draimcreative.bypass.loot:
+    description: "Разрешить выпадать предметам поставленные в креативе"
+    default: op
+  draimcreative.bypass.spawn_build:
+    description: "Разрешить создавать мобов-боссов"
+    default: op

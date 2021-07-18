@@ -4,7 +4,7 @@ import me.draimcreative.draimcreative.DraimCreative;
 
 import java.util.List;
 
-public class Settings extends me.draimcreative.draimcreative.settings.Settings {
+public class Settings extends me.draimlib.settings.Settings {
     public Settings(DraimCreative instance) {
         super(instance);
     }
@@ -27,6 +27,10 @@ public class Settings extends me.draimcreative.draimcreative.settings.Settings {
 
     public List<String> getPlaceBL() {
         return getStringList("blacklist.place");
+    }
+
+    public List<String> getUseBL() {
+        return getStringList("blacklist.use");
     }
 
     public List<String> getGetBL() {

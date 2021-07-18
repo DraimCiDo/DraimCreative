@@ -6,7 +6,7 @@
 
     <groupId>me.draimcreative</groupId>
     <artifactId>DraimCreative</artifactId>
-    <version>1.0</version>
+    <version>1.6</version>
     <packaging>jar</packaging>
 
     <name>DraimCreative</name>
@@ -55,6 +55,10 @@
 
     <repositories>
         <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
             <id>papermc-repo</id>
             <url>https://papermc.io/repo/repository/maven-public/</url>
         </repository>
@@ -70,6 +74,11 @@
             <artifactId>paper-api</artifactId>
             <version>1.17-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.DraimDEV</groupId>
+            <artifactId>DraimLib</artifactId>
+            <version>v1.0</version>
         </dependency>
     </dependencies>
 </project>
