@@ -29,7 +29,7 @@ public class MainCommand implements CommandExecutor {
             if (args[0].equals("reload")) {
                 if (!(sender instanceof Player) || sender.hasPermission("draimcreative.reload")) {
                     plugin.loadConfigManager();
-                    Messages.sendMessageText(plugin.getMessageManager(), conversable, " &5Конфигурация перезагружна !");
+                    Messages.sendMessageText(plugin.getMessageManager(), conversable, " &5Конфигурация перезагружна!");
                 } else {
                     Messages.sendMessage(plugin.getMessageManager(), conversable, "permission.general");
                 }
