@@ -64,14 +64,10 @@ public class InventoryMove implements Listener {
                     e.setCancelled(true);
                 }
             }
-        if (!player.hasPermission("draimcreative.bypass.lore") && plugin.getSettings().getProtection(Protections.LORE)) {
-            e.setCurrentItem(addLore(e.getCurrentItem(), player));
-            e.setCursor(addLore(e.getCursor(), player));
-        }
     }
 
-
-    private ItemStack addLore(ItemStack item, Player p) {
+/*
+   private ItemStack addLore(ItemStack item, Player p) {
         if (item == null)
             return null;
         if (p == null)
@@ -98,5 +94,7 @@ public class InventoryMove implements Listener {
         item.setItemMeta(meta);
         return item;
     }
+
+ */
 }
 

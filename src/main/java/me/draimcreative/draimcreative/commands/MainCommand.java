@@ -57,7 +57,7 @@ public class MainCommand implements CommandExecutor {
                     Messages.sendMessageText(plugin.getMessageManager(), conversable, " &7Аругумент не обнаружен!");
                 }
             } else {
-                Messages.sendMessageText(plugin.getMessageManager(), conversable, " &4Не известная команда " + args[0] + "!");
+                Messages.sendMessageText(plugin.getMessageManager(), conversable, " &7Не известная команда " + args[0] + "!");
             }
         } else {
             Messages.sendMessageText(plugin.getMessageManager(), conversable, " &7Ограничитель креатива - " + plugin.getName() + " v" + plugin.getDescription().getVersion());
