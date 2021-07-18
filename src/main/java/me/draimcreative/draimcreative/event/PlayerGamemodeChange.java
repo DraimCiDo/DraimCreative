@@ -45,7 +45,7 @@ public class PlayerGamemodeChange implements Listener {
             im.loadInventory(e.getNewGameMode());
             HashMap<String, String> replaceMap = new HashMap<>();
             replaceMap.put("{GAMEMODE}", e.getNewGameMode().name());
-            if(plugin.getSettings().getBoolean("send-player-messages"))
+            if(plugin.getSettings().getBoolean("sendmsg"))
                 Messages.sendMessage(plugin.getMessageManager(), p, "inventory.change", replaceMap);
         }
     }

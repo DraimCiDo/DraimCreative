@@ -31,7 +31,7 @@ public class PlayerLogin implements Listener {
         } catch (IOException exception) {
             //
         }
-        System.out.println("Режим игры : " + forceGamemode);
+        System.out.println("Режим игры: " + forceGamemode);
         if (forceGamemode) {
             if (!e.getPlayer().hasPermission("draimcreative.bypass.inventory")) {
                 InventoryManager im = new InventoryManager(e.getPlayer(), plugin);

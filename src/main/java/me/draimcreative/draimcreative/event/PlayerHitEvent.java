@@ -25,13 +25,13 @@ public class PlayerHitEvent implements Listener {
             if (attacker.getGameMode().equals(GameMode.CREATIVE)) {
                 if (e.getEntity() instanceof Player) {
                     if (!attacker.hasPermission("draimcreative.bypass.pvp") && plugin.getSettings().getProtection(Protections.PVP)) {
-                        if (plugin.getSettings().getBoolean("send-player-messages"))
+                        if (plugin.getSettings().getBoolean("sendmsg"))
                             Messages.sendMessage(plugin.getMessageManager(), attacker, "permission.hit.player");
                         e.setCancelled(true);
                     }
                 } else {
                     if (!attacker.hasPermission("draimcreative.bypass.pve") && plugin.getSettings().getProtection(Protections.PVE)) {
-                        if (plugin.getSettings().getBoolean("send-player-messages"))
+                        if (plugin.getSettings().getBoolean("sendmsg"))
                             Messages.sendMessage(plugin.getMessageManager(), attacker, "permission.hit.monster");
                         e.setCancelled(true);
                     }
@@ -48,13 +48,13 @@ public class PlayerHitEvent implements Listener {
             if (attacker.getGameMode().equals(GameMode.CREATIVE)) {
                 if (e.getHitEntity() instanceof Player) {
                     if (!attacker.hasPermission("draimcreative.bypass.pvp") && plugin.getSettings().getProtection(Protections.PVP)) {
-                        if (plugin.getSettings().getBoolean("send-player-messages"))
+                        if (plugin.getSettings().getBoolean("sendmsg"))
                             Messages.sendMessage(plugin.getMessageManager(), attacker, "permission.hit.player");
                         e.setCancelled(true);
                     }
                 } else {
                     if (!attacker.hasPermission("draimcreative.bypass.pve") && plugin.getSettings().getProtection(Protections.PVE)) {
-                        if (plugin.getSettings().getBoolean("send-player-messages"))
+                        if (plugin.getSettings().getBoolean("sendmsg"))
                             Messages.sendMessage(plugin.getMessageManager(), attacker, "permission.hit.monster");
                         e.setCancelled(true);
                     }

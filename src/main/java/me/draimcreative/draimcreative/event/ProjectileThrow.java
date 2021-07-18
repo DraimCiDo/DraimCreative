@@ -24,7 +24,7 @@ public class ProjectileThrow implements Listener {
             Player p = (Player) source;
             if (plugin.getSettings().getProtection(Protections.THROW) && p.getGameMode().equals(GameMode.CREATIVE)) {
                 if (!p.hasPermission("draimcreative.bypass.throw")) {
-                    if (plugin.getSettings().getBoolean("send-player-messages"))
+                    if (plugin.getSettings().getBoolean("sendmsg"))
                         Messages.sendMessage(plugin.getMessageManager(), p, "permission.throw");
                     e.setCancelled(true);
                 }

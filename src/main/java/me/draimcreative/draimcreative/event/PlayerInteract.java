@@ -37,7 +37,7 @@ public class PlayerInteract implements Listener {
                 }
             if (e.getItem().getItemMeta() instanceof SpawnEggMeta) {
                 if (!p.hasPermission("draimcreative.bypass.spawn_egg") && plugin.getSettings().getProtection(Protections.SPAWN)) {
-                    if(plugin.getSettings().getBoolean("send-player-messages"))
+                    if(plugin.getSettings().getBoolean("sendmsg"))
                         Messages.sendMessage(plugin.getMessageManager(), p, "permission.spawn");
                     e.setCancelled(true);
                     return;
@@ -48,7 +48,7 @@ public class PlayerInteract implements Listener {
             if (e.getClickedBlock() != null) {
                 if (e.getClickedBlock().getState() instanceof InventoryHolder || e.getClickedBlock().getType().equals(Material.ENDER_CHEST)) {
                     if (!p.hasPermission("draimcreative.container") && plugin.getSettings().getProtection(Protections.CONTAINER)) {
-                        if (plugin.getSettings().getBoolean("send-player-messages"))
+                        if (plugin.getSettings().getBoolean("sendmsg"))
                             Messages.sendMessage(plugin.getMessageManager(), p, "permission.container");
                         e.setCancelled(true);
                     }

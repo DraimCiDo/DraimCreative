@@ -24,13 +24,13 @@ public class PlayerBuild implements Listener {
         Player p = e.getPlayer();
         if (p.getGameMode() == GameMode.CREATIVE) {
             if (plugin.getSettings().getProtection(Protections.BUILD) && !p.hasPermission("draimcreative.bypass.build")) {
-                if (plugin.getSettings().getBoolean("send-player-messages"))
+                if (plugin.getSettings().getBoolean("sendmsg"))
                     Messages.sendMessage(plugin.getMessageManager(), p, "permission.build");
                 e.setCancelled(true);
             } else if (plugin.getSettings().getPlaceBL().stream().anyMatch(e.getBlock().getType().name()::equalsIgnoreCase) && !p.hasPermission("draimcreative.bypass.blacklist.place")) {
                 HashMap<String, String> replaceMap = new HashMap<>();
                 replaceMap.put("{BLOCK}", e.getBlock().getType().name());
-                if (plugin.getSettings().getBoolean("send-player-messages"))
+                if (plugin.getSettings().getBoolean("sendmsg"))
                     Messages.sendMessage(plugin.getMessageManager(), p, "blacklist.place", replaceMap);
                 e.setCancelled(true);
             }

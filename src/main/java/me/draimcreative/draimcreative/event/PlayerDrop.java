@@ -21,7 +21,7 @@ public class PlayerDrop implements Listener {
         Player p = e.getPlayer();
         if (plugin.getSettings().getProtection(Protections.DROP) && p.getGameMode().equals(GameMode.CREATIVE)) {
             if (!p.hasPermission("draimcreative.bypass.drop")) {
-                if (plugin.getSettings().getBoolean("send-player-messages"))
+                if (plugin.getSettings().getBoolean("sendmsg"))
                     Messages.sendMessage(plugin.getMessageManager(), p, "permission.drop");
                 e.setCancelled(true);
             }

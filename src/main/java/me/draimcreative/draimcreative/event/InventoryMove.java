@@ -40,7 +40,7 @@ public class InventoryMove implements Listener {
                 e.getClick().equals(ClickType.WINDOW_BORDER_LEFT) || e.getClick().equals(ClickType.WINDOW_BORDER_RIGHT) ||
                 e.getClick().equals(ClickType.UNKNOWN)) {
             if (plugin.getSettings().getProtection(Protections.DROP) && !player.hasPermission("draimcreative.bypass.drop")) {
-                if (plugin.getSettings().getBoolean("send-player-messages"))
+                if (plugin.getSettings().getBoolean("sendmsg"))
                     Messages.sendMessage(plugin.getMessageManager(), player, "permission.drop");
                 e.setCancelled(true);
             }

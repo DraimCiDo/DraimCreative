@@ -21,7 +21,7 @@ public class PlayerInteractAtEntity implements Listener {
         Player p = e.getPlayer();
         if (plugin.getSettings().getProtection(Protections.ENTITY) && p.getGameMode().equals(GameMode.CREATIVE) && !p.hasPermission("draimcreative.bypass.entity")) {
             if (!p.hasPermission("draimcreative.bypass.entity") && !p.hasPermission("draimcreative.bypass.entity." + e.getRightClicked().getType().name().toLowerCase())) {
-                if (plugin.getSettings().getBoolean("send-player-messages"))
+                if (plugin.getSettings().getBoolean("sendmsg"))
                     Messages.sendMessage(plugin.getMessageManager(), p, "permission.entity");
                 e.setCancelled(true);
             }

@@ -28,7 +28,7 @@ public class InventoryOpen implements Listener {
             if (p.getGameMode().equals(GameMode.CREATIVE) && plugin.getSettings().getProtection(Protections.CONTAINER)) {
                 if (isProtectedChest(e.getInventory())) {
                     if (!p.hasPermission("draimcreative.bypass.container")) {
-                        if (plugin.getSettings().getBoolean("send-player-messages"))
+                        if (plugin.getSettings().getBoolean("sendmsg"))
                             Messages.sendMessage(plugin.getMessageManager(), p, "permission.container");
                         e.setCancelled(true);
                     }

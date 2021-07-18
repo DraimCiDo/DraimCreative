@@ -54,8 +54,10 @@ public enum Protections {
                 lore.add(ChatColor.GOLD + "" + ChatColor.BOLD + "Статус : Запущен");
             else
                 lore.add(ChatColor.GOLD + "" + ChatColor.BOLD + "Статус : Отключен");
+            /*
             itemMeta.setLore(lore);
             itemMeta.setDisplayName(ChatColor.RESET + "" + ChatColor.BOLD + ChatColor.GOLD + this.displayName);
+             */
             if(value)
                 itemMeta.addEnchant(Enchantment.DURABILITY, 1, true);
             itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

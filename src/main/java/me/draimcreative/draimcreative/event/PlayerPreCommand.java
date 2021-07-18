@@ -30,7 +30,7 @@ public class PlayerPreCommand implements Listener {
             if(blCmd.toLowerCase().startsWith(cmd))
             {
                 e.setCancelled(true);
-                if(plugin.getSettings().getBoolean("send-player-messages"))
+                if(plugin.getSettings().getBoolean("sendmsg"))
                     Messages.sendMessage(plugin.getMessageManager(), e.getPlayer(), "blacklist.commands");
             }
         }
