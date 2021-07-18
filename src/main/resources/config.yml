@@ -4,7 +4,7 @@ lang: ru_RU
 log: true
 save-interval: 300
 save-log: true
-send-player-messages: false
+sendmsg: false
 ## Защитный модуль
 protections:
   container: true #Байпсс : draimcreative.container
