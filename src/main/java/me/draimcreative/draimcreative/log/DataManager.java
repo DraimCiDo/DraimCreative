@@ -69,7 +69,7 @@ public class DataManager {
             }
             if(plugin.getSettings().getBoolean("save-log"))
                 Messages.log(plugin,
-                        "&2Лог сохранён в базу! &7(" + n + "мс )");
+                        "&2Лог сохранён в базу! &7(" + n + "мс)");
         });
     }
     public void saveSync()
@@ -82,7 +82,7 @@ public class DataManager {
             n++;
         }
         Messages.log(plugin,
-                "&2Лог сохранён в базу! &7(" + n + "мс )");
+                "&2Лог сохранён в базу! &7(" + n + "мс)");
     }
 
     public void delete(BlockLog log)
