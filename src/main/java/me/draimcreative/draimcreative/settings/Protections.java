@@ -12,19 +12,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public enum Protections {
-    CONTAINER("container", Material.CHEST, "Protect container usage", "Container"),
-    SPAWN("spawn", Material.SKELETON_SPAWN_EGG, "Protect spawn egg usage", "Spawn Egg"),
-    DROP("drop", Material.DROPPER, "Protect player drop usage", "Drop"),
-    PICKUP("pickup", Material.TRIPWIRE_HOOK, "Protect pickup item on ground", "PickUp"),
-    BUILD("build", Material.OAK_PLANKS, "Protect build in creative", "Build"),
-    ENTITY("entity", Material.ITEM_FRAME, "Protect entity usage (ItemFrame / ArmorStand ...)", "Entity"),
-    PVP("pvp", Material.PLAYER_HEAD, "Disable PVP for Creative", "PVP"),
-    PVE("pve", Material.SKELETON_SKULL, "Disable PVE for Creative", "PVE"),
-    LORE("lore", Material.NAME_TAG, "Add lore to Creative Items", "Lore"),
-    LOOT("loot", Material.NAME_TAG, "Deny looting from Creative placed block", "Lootable"),
-    SPAWN_BUILD("spawn-build", Material.WITHER_SKELETON_SKULL, "Deny spawn monster with build", "Spawn Build"),
-    THROW("throw", Material.ARROW, "Deny throw projectile", "Throw"),
-    COMMANDS("commands", Material.COMMAND_BLOCK, "Deny using blacklisted commands", "Commands");
+    CONTAINER("container", Material.CHEST, "Ограничение на открытые сундуков", "Сундуки"),
+    SPAWN("spawn", Material.SKELETON_SPAWN_EGG, "Ограничения на спавн мобов", "Спавн мобов"),
+    DROP("drop", Material.DROPPER, "Ограничение на выкидывание вещей", "Дроп"),
+    PICKUP("pickup", Material.TRIPWIRE_HOOK, "Ограничение на подбор вещей", "Подбор лута"),
+    BUILD("build", Material.OAK_PLANKS, "Ограничение на строительство блоков", "Строительство"),
+    ENTITY("entity", Material.ITEM_FRAME, "Ограничение на взаимодействие с мобами", "Мобы"),
+    PVP("pvp", Material.PLAYER_HEAD, "Ограничение на PVP", "ПвП"),
+    PVE("pve", Material.SKELETON_SKULL, "Ограничение на урон по мобам", "Урон мобам"),
+    /*
+    LORE("lore", Material.NAME_TAG, "", ""),
+
+     */
+    LOOT("loot", Material.NAME_TAG, "Ограничение на лут предметов", "лут"),
+    SPAWN_BUILD("spawn-build", Material.WITHER_SKELETON_SKULL, "Ограничение на создание боссов", "Боссы"),
+    THROW("throw", Material.ARROW, "Ограничение на стрельбу", "Стрельба"),
+    COMMANDS("commands", Material.COMMAND_BLOCK, "Ограничение на команды", "Команды");
 
     private final String name;
     private final Material icon;
@@ -51,13 +54,11 @@ public enum Protections {
             lore.addAll(LoreUtils.formatLoreString(ChatColor.RESET + this.desc));
             lore.add(ChatColor.DARK_GRAY + "------");
             if (value)
-                lore.add(ChatColor.GOLD + "" + ChatColor.BOLD + "Статус : Запущен");
+                lore.add(ChatColor.GOLD + "" + ChatColor.BOLD + "Статус: Запущен");
             else
-                lore.add(ChatColor.GOLD + "" + ChatColor.BOLD + "Статус : Отключен");
-            /*
+                lore.add(ChatColor.GOLD + "" + ChatColor.BOLD + "Статус: Отключен");
             itemMeta.setLore(lore);
             itemMeta.setDisplayName(ChatColor.RESET + "" + ChatColor.BOLD + ChatColor.GOLD + this.displayName);
-             */
             if(value)
                 itemMeta.addEnchant(Enchantment.DURABILITY, 1, true);
             itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
