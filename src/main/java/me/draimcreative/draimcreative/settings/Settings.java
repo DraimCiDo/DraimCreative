@@ -45,7 +45,10 @@ public class Settings extends me.draimlib.settings.Settings {
         return getStringList("blacklist.commands");
     }
 
+    /*
     public List<String> getLore() {
         return getStringList("creative-lore");
     }
+
+     */
 }

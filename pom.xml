@@ -6,7 +6,7 @@
 
     <groupId>me.draimcreative</groupId>
     <artifactId>DraimCreative</artifactId>
-    <version>1.7.2</version>
+    <version>1.7.4</version>
     <packaging>jar</packaging>
 
     <name>DraimCreative</name>
