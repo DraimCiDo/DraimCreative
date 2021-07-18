@@ -1,0 +1,6 @@
+name: DraimCreative
+version: ${project.version}
+main: me.draimcreative.draimcreative.DraimCreative
+api-version: 1.17
+authors: [ DraimGooSe ]
+description: Ограничения креатива для проекта DraimCiDo
