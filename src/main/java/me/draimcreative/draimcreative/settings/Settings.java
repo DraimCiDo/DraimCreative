@@ -17,6 +17,10 @@ public class Settings extends me.draimlib.settings.Settings {
         return getBoolean("protections." + protections.getName());
     }
 
+    public boolean getBlackList(Blacklist blacklist) {
+        return getBoolean("blacklist." + blacklist.getName());
+    }
+
     public boolean creativeInvEnable() {
         return getBoolean("inventory.creative");
     }

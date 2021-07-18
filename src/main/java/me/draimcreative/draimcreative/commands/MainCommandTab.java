@@ -20,6 +20,7 @@ public class MainCommandTab implements TabCompleter {
                 if (sender.hasPermission("draimcreative.admin")) {
                     list.add("inventory");
                     list.add("settings");
+                    list.add("blacklist");
                 }
                 break;
             case 2:

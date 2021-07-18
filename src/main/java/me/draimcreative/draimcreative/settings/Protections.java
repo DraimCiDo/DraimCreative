@@ -50,9 +50,9 @@ public enum Protections {
         ItemMeta itemMeta = item.getItemMeta();
         if (itemMeta != null) {
             List<String> lore = new ArrayList<>();
-            lore.add(ChatColor.DARK_GRAY + "------");
+            lore.add(ChatColor.DARK_GRAY + "");
             lore.addAll(LoreUtils.formatLoreString(ChatColor.RESET + this.desc));
-            lore.add(ChatColor.DARK_GRAY + "------");
+            lore.add(ChatColor.DARK_GRAY + "");
             if (value)
                 lore.add(ChatColor.GOLD + "" + ChatColor.BOLD + "Статус: Запущен");
             else

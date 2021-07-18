@@ -1,6 +1,7 @@
 package me.draimcreative.draimcreative.commands;
 
 import me.draimcreative.draimcreative.DraimCreative;
+import me.draimcreative.draimcreative.gui.blacklist.BlacklistSettingGui;
 import me.draimcreative.draimcreative.gui.settings.ProtectionSettingGui;
 import me.draimcreative.draimcreative.manager.InventoryManager;
 import me.draimlib.utils.Messages;
@@ -36,6 +37,12 @@ public class MainCommand implements CommandExecutor {
             } else if (args[0].equals("settings")) {
                 if (sender instanceof Player && sender.hasPermission("draimcreative.admin")) {
                     new ProtectionSettingGui((Player) sender, plugin).show();
+                } else {
+                    Messages.sendMessage(plugin.getMessageManager(), conversable, "permission.general");
+                }
+            } else if (args[0].equals("blacklist")) {
+                if (sender instanceof  Player && sender.hasPermission("draimcreative.admin")) {
+                    new BlacklistSettingGui((Player) sender, plugin).show();
                 } else {
                     Messages.sendMessage(plugin.getMessageManager(), conversable, "permission.general");
                 }
