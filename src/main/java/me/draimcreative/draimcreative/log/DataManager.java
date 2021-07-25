@@ -68,7 +68,8 @@ public class DataManager {
                 n++;
             }
             if(plugin.getSettings().getBoolean("save-log"))
-                Messages.log(plugin,
+                if(n>0)
+                    Messages.log(plugin,
                         "&2Лог сохранён в базу! &7(" + n + "мс)");
         });
     }
@@ -81,7 +82,8 @@ public class DataManager {
             save(log);
             n++;
         }
-        Messages.log(plugin,
+        if(n>0)
+            Messages.log(plugin,
                 "&2Лог сохранён в базу! &7(" + n + "мс)");
     }
 
