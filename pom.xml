@@ -76,7 +76,7 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.github.DraimDEV</groupId>
+            <groupId>com.github.DraimCiDo</groupId>
             <artifactId>DraimLib</artifactId>
             <version>v1.0</version>
         </dependency>
