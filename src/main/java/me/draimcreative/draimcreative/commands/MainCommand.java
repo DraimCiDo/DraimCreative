@@ -42,7 +42,8 @@ public class MainCommand implements CommandExecutor {
                 }
             } else if (args[0].equals("blacklist")) {
                 if (sender instanceof  Player && sender.hasPermission("draimcreative.admin")) {
-                    new BlacklistSettingGui((Player) sender, plugin).show();
+                    Messages.sendMessageText(plugin.getMessageManager(), conversable, " &cДанная функция в разработке!");
+                  //  new BlacklistSettingGui((Player) sender, plugin).show();
                 } else {
                     Messages.sendMessage(plugin.getMessageManager(), conversable, "permission.general");
                 }
