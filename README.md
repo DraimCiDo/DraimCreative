@@ -8,7 +8,7 @@ Plugin DraimCreative gives you opportunity to fully control the creative mode.
   - Full control of creative mode
 
 ### Discord Support 
-Discord Server is still in development<br>
+Your support [here](https://discord.gg/TqERqrrBjE)<br>
 The fastest way to contact author of plugin of course - Discord
 
 ### Wiki Page
