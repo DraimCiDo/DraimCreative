@@ -12,7 +12,7 @@ Your support [here](https://discord.gg/TqERqrrBjE)<br>
 The fastest way to contact author of plugin of course - Discord
 
 ### Wiki Page
-You can find the wiki [here](https://github.com/draimcido/draimcraetive).<br>
+You can find the wiki [here](https://github.com/draimcido/draimcreative).<br>
 The wiki page contains a lot of useful information, as well as explanations of how to work with this plugin.
 
 ### Bug Reports
